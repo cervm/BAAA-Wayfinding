@@ -3,3 +3,6 @@
 
 ## User settings
 xcuserdata/
+
+## Config files
+Config.xcconfig
