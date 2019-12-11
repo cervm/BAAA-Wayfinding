@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		426F4E5223A02A4E00D62455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426F4E5023A02A4E00D62455 /* Main.storyboard */; };
 		426F4E5423A02A5200D62455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426F4E5323A02A5200D62455 /* Assets.xcassets */; };
 		426F4E5723A02A5200D62455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426F4E5523A02A5200D62455 /* LaunchScreen.storyboard */; };
+		63056D8CD09846667F035E58 /* Pods_Adventures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14A965B9B7404D17C88D0B /* Pods_Adventures.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B14A965B9B7404D17C88D0B /* Pods_Adventures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adventures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426F4E4723A02A4E00D62455 /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426F4E4A23A02A4E00D62455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426F4E4C23A02A4E00D62455 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		426F4E5323A02A5200D62455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		426F4E5623A02A5200D62455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		426F4E5823A02A5200D62455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77886AC8AF2590F2775AE954 /* Pods-Adventures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures.release.xcconfig"; path = "Target Support Files/Pods-Adventures/Pods-Adventures.release.xcconfig"; sourceTree = "<group>"; };
+		DDF12B8B92B44C1998DE04C9 /* Pods-Adventures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adventures.debug.xcconfig"; path = "Target Support Files/Pods-Adventures/Pods-Adventures.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63056D8CD09846667F035E58 /* Pods_Adventures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ACB667833A1CCAC4A2FFA3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B14A965B9B7404D17C88D0B /* Pods_Adventures.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		426F4E3E23A02A4D00D62455 = {
 			isa = PBXGroup;
 			children = (
 				426F4E4923A02A4E00D62455 /* Adventures */,
 				426F4E4823A02A4E00D62455 /* Products */,
+				CCA2BF4B2342311F6AEA79C2 /* Pods */,
+				1ACB667833A1CCAC4A2FFA3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = Adventures;
 			sourceTree = "<group>";
 		};
+		CCA2BF4B2342311F6AEA79C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDF12B8B92B44C1998DE04C9 /* Pods-Adventures.debug.xcconfig */,
+				77886AC8AF2590F2775AE954 /* Pods-Adventures.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 426F4E5B23A02A5200D62455 /* Build configuration list for PBXNativeTarget "Adventures" */;
 			buildPhases = (
+				38E196FA31611608F42EC95C /* [CP] Check Pods Manifest.lock */,
 				426F4E4323A02A4E00D62455 /* Sources */,
 				426F4E4423A02A4E00D62455 /* Frameworks */,
 				426F4E4523A02A4E00D62455 /* Resources */,
+				743C6574AEB53594D33D76BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38E196FA31611608F42EC95C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adventures-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		743C6574AEB53594D33D76BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adventures/Pods-Adventures-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adventures/Pods-Adventures-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adventures/Pods-Adventures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		426F4E4323A02A4E00D62455 /* Sources */ = {
@@ -282,10 +350,12 @@
 		};
 		426F4E5C23A02A5200D62455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF12B8B92B44C1998DE04C9 /* Pods-Adventures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4HWGR75K8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Adventures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +370,12 @@
 		};
 		426F4E5D23A02A5200D62455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77886AC8AF2590F2775AE954 /* Pods-Adventures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4HWGR75K8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Adventures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
