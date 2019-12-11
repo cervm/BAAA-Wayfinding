@@ -1,0 +1,16 @@
+PODS:
+  - PlacenoteSDK (1.8)
+
+DEPENDENCIES:
+  - PlacenoteSDK
+
+SPEC REPOS:
+  trunk:
+    - PlacenoteSDK
+
+SPEC CHECKSUMS:
+  PlacenoteSDK: 3ec0318de3a1462ea60de6f105254b8e449337bf
+
+PODFILE CHECKSUM: 10ab75811c46b0a18b96cd0a8a9c539d1856d73f
+
+COCOAPODS: 1.8.4
