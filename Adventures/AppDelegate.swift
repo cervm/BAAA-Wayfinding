@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PlacenoteSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String {
+            LibPlacenote.instance.initialize(apiKey: apiKey,  onInitialized: {(initialized: Bool?) -> Void in
+                if (initialized!) {
+                    print ("SDK Initialized")
+                }
+                else {
+                    print ("SDK Could not be initialized")
+                }
+            })
+        } else {
+            print("No API key found in the config file")
+        }
+        
         return true
     }
 
