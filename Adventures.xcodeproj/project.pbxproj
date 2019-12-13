@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4253A91B23A12220005E194C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4253A91A23A12220005E194C /* Config.xcconfig */; };
 		426F4E4B23A02A4E00D62455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F4E4A23A02A4E00D62455 /* AppDelegate.swift */; };
 		426F4E4D23A02A4E00D62455 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 426F4E4C23A02A4E00D62455 /* art.scnassets */; };
 		426F4E4F23A02A4E00D62455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426F4E4E23A02A4E00D62455 /* ViewController.swift */; };
@@ -18,7 +19,8 @@
 
 /* Begin PBXFileReference section */
 		2B14A965B9B7404D17C88D0B /* Pods_Adventures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adventures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		426F4E4723A02A4E00D62455 /* Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4253A91A23A12220005E194C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		426F4E4723A02A4E00D62455 /* BAAA Wayfinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BAAA Wayfinding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		426F4E4A23A02A4E00D62455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		426F4E4C23A02A4E00D62455 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		426F4E4E23A02A4E00D62455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		426F4E3E23A02A4D00D62455 = {
 			isa = PBXGroup;
 			children = (
+				4253A91A23A12220005E194C /* Config.xcconfig */,
 				426F4E4923A02A4E00D62455 /* Adventures */,
 				426F4E4823A02A4E00D62455 /* Products */,
 				CCA2BF4B2342311F6AEA79C2 /* Pods */,
@@ -63,7 +66,7 @@
 		426F4E4823A02A4E00D62455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				426F4E4723A02A4E00D62455 /* Adventures.app */,
+				426F4E4723A02A4E00D62455 /* BAAA Wayfinding.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +113,7 @@
 			);
 			name = Adventures;
 			productName = Adventures;
-			productReference = 426F4E4723A02A4E00D62455 /* Adventures.app */;
+			productReference = 426F4E4723A02A4E00D62455 /* BAAA Wayfinding.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				426F4E4D23A02A4E00D62455 /* art.scnassets in Resources */,
+				4253A91B23A12220005E194C /* Config.xcconfig in Resources */,
 				426F4E5723A02A5200D62455 /* LaunchScreen.storyboard in Resources */,
 				426F4E5423A02A5200D62455 /* Assets.xcassets in Resources */,
 				426F4E5223A02A4E00D62455 /* Main.storyboard in Resources */,
@@ -236,6 +240,7 @@
 /* Begin XCBuildConfiguration section */
 		426F4E5923A02A5200D62455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4253A91A23A12220005E194C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -296,6 +301,7 @@
 		};
 		426F4E5A23A02A5200D62455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4253A91A23A12220005E194C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -362,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekcervinka.Adventures;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BAAA Wayfinding";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekcervinka.Adventures;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BAAA Wayfinding";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
